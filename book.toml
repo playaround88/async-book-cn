@@ -10,6 +10,7 @@ create-missing = false
 [output.html]
 git-repository-url = "https://github.com/rust-lang/async-book"
 site-url = "/async-book/"
+additional-js = ["translate.js"]
 
 [output.linkcheck]
 follow-web-links = true
