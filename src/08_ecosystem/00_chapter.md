@@ -36,7 +36,7 @@ The following crates provide popular runtimes.
 - [async-std](https://docs.rs/async-std/): A crate that provides asynchronous counterparts to standard library components.
 - [smol](https://docs.rs/smol/): A small, simplified async runtime.
 Provides the `Async` trait that can be used to wrap structs like `UnixStream` or `TcpListener`.
-- [fuchsia-async](https://fuchsia.googlesource.com/fuchsia/+/master/src/lib/fuchsia-async/):
+- [fuchsia-async](https://www.baidu.com/):
 An executor for use in the Fuchsia OS.
 
 ## Determining Ecosystem Compatibility

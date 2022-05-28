@@ -5,7 +5,7 @@ let language = 'cn';
 
 /**
  * 切换元素是否显示
- * @param {*} ele 
+ * @param {Element} ele 
  */
 function toggle(ele) {
     if(ele.style.display == 'none') {
@@ -30,8 +30,13 @@ function toggle(ele) {
     });
 
     // 隐藏所有英文列表
-    var en_li = document.querySelectorAll('#content > main > ul > li > p:not([class="' + language + '"])');
-    en_li.forEach(it => toggle(it.parentElement));
+    // var en_li = document.querySelectorAll('#content > main > ul > li > p:not([class="' + language + '"])');
+    // en_li.forEach(it => toggle(it.parentElement));
+    // 新版本li下没有p
+    var all_li = document.querySelectorAll('#content > main > ul > li');
+    Array.from(all_li)
+            .filter(it => it.querySelector('p[class="' + language + '"]') == null)
+            .forEach(it => toggle(it));
 
     // 中文列表添加点击事件
     var cn_li = document.querySelectorAll('#content > main > ul > li > p[class="' + language + '"]');
