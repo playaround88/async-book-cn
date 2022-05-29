@@ -5,6 +5,14 @@ Asynchronous Programming in Rust
 Rust异步编程
 </p>
 
+## 关于翻译
+本翻译旨在协助更多人了解和使用Rust异步编程。  
+同时译者一直认为我们应该更多的接触原始资料，所以本翻译尽量保留了原文
+1. 可以在官方文档更新后，尽量简单的保持更新
+2. 可以在发现翻译语句不达意时，方便查看英文原文
+
+> 启动服务器后，点击任何段落，即可查看英文原文
+
 ## 依赖 Requirements
 The async book is built with [`mdbook`], you can install it using cargo.
 
