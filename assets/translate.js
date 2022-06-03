@@ -33,13 +33,13 @@ function toggle(ele) {
     // var en_li = document.querySelectorAll('#content > main > ul > li > p:not([class="' + language + '"])');
     // en_li.forEach(it => toggle(it.parentElement));
     // 新版本li下没有p
-    var all_li = document.querySelectorAll('#content > main > ul > li');
+    var all_li = document.querySelectorAll('#content > main > ul,ol > li');
     Array.from(all_li)
             .filter(it => it.querySelector('p[class="' + language + '"]') == null)
             .forEach(it => toggle(it));
 
     // 中文列表添加点击事件
-    var cn_li = document.querySelectorAll('#content > main > ul > li > p[class="' + language + '"]');
+    var cn_li = document.querySelectorAll('#content > main > ul,ol > li > p[class="' + language + '"]');
     cn_li.forEach(it => {
         it.addEventListener('click', function(e) {
             var p_li = e.target.parentElement;

@@ -1,4 +1,4 @@
-# The `Future` Trait(`Future`特质)
+# The `Future` Trait(`Future`特征)
 
 The `Future` trait is at the center of asynchronous programming in Rust.
 A `Future` is an asynchronous computation that can produce a value
@@ -6,9 +6,9 @@ A `Future` is an asynchronous computation that can produce a value
 the future trait might look something like this:
 
 <p class="cn">
-`Future`特质是Rust异步编程的核心。
+`Future`特征是Rust异步编程的核心。
 `Future`是一种可以生成值的异步计算（尽管该值可能为空，例如`()`）。
-未来特质的简化版本可能如下所示：
+未来特征的简化版本可能如下所示：
 </p>
 
 ```rust
@@ -93,7 +93,7 @@ real `Future` trait and how it is different.
 
 <p class="cn">
 这些示例展示了如何使用`Future`特性来表示异步控制流，而不需要多个分配的对象和深度嵌套的回调。
-随着基本控制流程的结束，让我们来谈谈`Future`特质及其真正的不同之处。
+随着基本控制流程的结束，让我们来谈谈`Future`特征及其真正的不同之处。
 </p>
 
 ```rust,ignore

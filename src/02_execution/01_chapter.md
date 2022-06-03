@@ -21,5 +21,5 @@ now, you may want to bookmark it to revisit in the future.
 Now, with that out of the way, let's talk about the `Future` trait.
 
 <p class="cn">
-现在，让我们来谈谈`Future`特质。
+现在，让我们来谈谈`Future`特征。
 </p>

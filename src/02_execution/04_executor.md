@@ -38,7 +38,7 @@ which provides an easy way to construct a `Waker`. Edit `Cargo.toml` to add
 a new dependency:
 
 <p class="cn">
-在本例中，`ArcWake`特质依赖于`futures` crate，它提供了一种构建`Waker`的简单方法。
+在本例中，`ArcWake`特征依赖于`futures` crate，它提供了一种构建`Waker`的简单方法。
 编辑`Cargo.toml`来添加新的依赖项，请执行以下操作：
 </p>
 
@@ -114,7 +114,7 @@ turned into `Waker`s and awoken:
 <p class="cn">
 要轮询future，我们需要创建一个`Waker`。如[任务唤醒部分]所述，`Waker`负责安排一个任务，以便在调用 `wake`后再次轮询。
 请记住，`Waker`会准确地告诉执行器哪项任务已经准备好，让他们只轮询准备好取得进展的future。
-创建新`Waker`的最简单方法是实现`ArcWake`特质，然后使用`waker_ref`或`.into_waker()`函数将`Arc<impl ArcWake>`转换为`Waker`。
+创建新`Waker`的最简单方法是实现`ArcWake`特征，然后使用`waker_ref`或`.into_waker()`函数将`Arc<impl ArcWake>`转换为`Waker`。
 让我们为我们的任务实现`ArcWake`，让它们变成`Waker`并可被唤醒：
 </p>
 
