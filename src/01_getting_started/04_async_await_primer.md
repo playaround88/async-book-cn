@@ -1,4 +1,4 @@
-# `async`/`.await` Primer(入门书)
+# `async`/`.await` Primer(启蒙)
 
 `async`/`.await` is Rust's built-in tool for writing asynchronous functions
 that look like synchronous code. `async` transforms a block of code into a
